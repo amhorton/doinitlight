@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="DoinItLight.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	
+</head>
+<body>
+	<div class="main-container">
+		<section class="soundboard group">
+		<div class="syllable" id="do">DO</div>
+		<div class="syllable" id="in">IN</div>
+		<div class="syllable" id="it">IT</div>
+		<div class="syllable" id="right">RIGHT</div>
+		
+		
+		</section>
+		<section class="control">
+		
+		</section>
+	</div>
+</body>
+
+<script src="vendor/jquery-1.11.2.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+function flash (selector) {
+	$target = $(selector);
+	
+	$target.addClass('flashing');
+	setTimeout(function () {
+		$target.removeClass('flashing')
+	}, 500)
+}
+</script>
